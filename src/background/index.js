@@ -39,8 +39,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 
   const { url } = tab;
   if (
-    url === undefined ||
-    !/^https:\/\/([^/]+\.mattermost|mattermost\.[^/]+|[^/]+\.mattermost\.[^/]+)/.test(url)
+    url === "https://interintellect.org/interintellect/channels/mattermost-features"
   )
     return;
 
